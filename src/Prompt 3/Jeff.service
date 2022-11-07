@@ -1,0 +1,12 @@
+[Unit]
+Description=ComputerVisionMidterm
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=python python /Downloads/CV_Detection-Jeff/Jeff-systemd.py
+User=ultraviolet
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
